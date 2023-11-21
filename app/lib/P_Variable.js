@@ -32,6 +32,10 @@ export function openWhatsApp() {
   return whatsApp;
 }
 
+export function openComment() {
+  return true;
+}
+
 export function getDirection() {
   // return 'rtl';
   return 'initial';
@@ -1054,6 +1058,8 @@ export function getLanguage() {
       writeReview: 'اكتب مراجعة',
       address: 'العنوان بالضبط',
       postalCode: 'الرمز البريدي',
+      quantityText: 'كمية',
+      errorQuantity: 'الرجاء إدخال كمية المنتج',
       addressList: [
         {
           name: '（المحافظة）إختر',
@@ -1882,7 +1888,7 @@ export function getLanguage() {
       type: 'RON',
       country: 'Romania',
       country_code: 'ROU',
-      deliveryProcess: 'zoopetcc_flow_chart.jpg',
+      deliveryProcess: 'homeromo_flow_chart.png',
       whatsAppText: 'Vă rugăm să faceți clic pe trimite direct, nu ștergeți linkul de mai jos, veți primi cele mai precise răspunsuri de la serviciul nostru pentru clienți',
       notFoundTit: 'Am pierdut această pagină',
       notFoundText: 'Nu am putut găsi pagina pe care o căutați.',
@@ -1975,6 +1981,8 @@ export function getLanguage() {
       address: 'Adresa exacta',
       postalCode: 'Cod postal',
       orderError: 'Achiziție eșuată',
+      quantityText: 'cantitate',
+      errorQuantity: 'Vă rugăm să introduceți cantitatea produsului',
       addressList: [
         {
           "name": "Județ",
@@ -2248,6 +2256,8 @@ export function getLanguage() {
       address: "Utca",
       postalCode: 'Irányítószám',
       orderError: 'Sikertelen vásárlás',
+      quantityText: 'Mennyiség',
+      errorQuantity: 'Kérjük, adja meg a termék mennyiségét',
       addressList: {
         "Megye": "",
         "Bács-Kiskun": {

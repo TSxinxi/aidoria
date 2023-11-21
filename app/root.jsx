@@ -47,7 +47,7 @@ export const links = () => {
       rel: 'preconnect',
       href: 'https://shop.app',
     },
-    { rel: 'icon', href: '//cdn.shopifycdn.net/s/files/1/0816/3632/7730/files/321.png?crop=center&height=32&v=1693470694&width=32' },
+    { rel: 'icon', href: '//homeromo.com/cdn/shop/files/43434.png?crop=center&height=32&v=1695890973&width=32' },
   ];
 };
 
@@ -74,21 +74,6 @@ export async function loader({ context }) {
 }
 
 export default function App() {
-  // Sentry.init({
-  //   dsn: "https://50d65047e35b316dee541d55cc7a99c2@o4506097284677632.ingest.sentry.io/4506097305452544",
-  //   integrations: [
-  //     new Sentry.BrowserTracing({
-  //       // Set 'tracePropagationTargets' to control for which URLs distributed tracing should be enabled
-  //       tracePropagationTargets: ["localhost", /^https:\/\/page.zoopet.cc\.io\/api/],
-  //     }),
-  //     new Sentry.Replay(),
-  //   ],
-  //   // Performance Monitoring
-  //   tracesSampleRate: 1.0, // Capture 100% of the transactions
-  //   // Session Replay
-  //   replaysSessionSampleRate: 0.1, // This sets the sample rate at 10%. You may want to change it to 100% while in development and then sample at a lower rate in production.
-  //   replaysOnErrorSampleRate: 1.0, // If you're not already sampling the entire session, change the sample rate to 100% when sampling sessions where errors occur.
-  // });
 
   const data = useLoaderData();
   const locale = data.selectedLocale ?? DEFAULT_LOCALE;
@@ -102,33 +87,68 @@ export default function App() {
       localStorage.setItem('refererName', getReferer())
     }
     useEffect(() => {
+      // Sentry.init({
+      //   dsn: "https://3a9a729470c367d1557919b68842f912@o4506097284677632.ingest.sentry.io/4506098198773760",
+      //   integrations: [
+      //     new Sentry.BrowserTracing({
+      //       // Set 'tracePropagationTargets' to control for which URLs distributed tracing should be enabled
+      //       tracePropagationTargets: ["localhost", /^https:\/\/page.homeromo.com\.io\/api/],
+      //     }),
+      //     new Sentry.Replay(),
+      //   ],
+      //   // Performance Monitoring
+      //   tracesSampleRate: 1.0, // Capture 100% of the transactions
+      //   // Session Replay
+      //   replaysSessionSampleRate: 0.1, // This sets the sample rate at 10%. You may want to change it to 100% while in development and then sample at a lower rate in production.
+      //   replaysOnErrorSampleRate: 1.0, // If you're not already sampling the entire session, change the sample rate to 100% when sampling sessions where errors occur.
+      // });
+
       // (function (h, o, t, j, a, r) {
       //   h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
-      //   h._hjSettings = { hjid: 3651999, hjsv: 6 };
+      //   h._hjSettings = { hjid: 3719262, hjsv: 6 };
       //   a = o.getElementsByTagName('head')[0];
       //   r = o.createElement('script'); r.async = 1;
       //   r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
       //   a.appendChild(r);
       // })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
 
-      //   window.dataLayer = window.dataLayer || [];
-      //   function gtag() { dataLayer.push(arguments); }
-      //   gtag('js', new Date());
-      //   gtag('config', 'G-X12GDSEKQ1');
+      // //   window.dataLayer = window.dataLayer || [];
+      // //   function gtag() { dataLayer.push(arguments); }
+      // //   gtag('js', new Date());
+      // //   gtag('config', 'G-X12GDSEKQ1');
 
-      //   !function (f, b, e, v, n, t, s) {
-      //     if (f.fbq) return; n = f.fbq = function () {
-      //       n.callMethod ?
-      //         n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-      //     };
-      //     if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
-      //     n.queue = []; t = b.createElement(e); t.async = !0;
-      //     t.src = v; s = b.getElementsByTagName(e)[0];
-      //     s.parentNode.insertBefore(t, s)
-      //   }(window, document, 'script',
-      //     'https://connect.facebook.net/en_US/fbevents.js');
-      //   fbq('init', '895173741588158');
-      //   fbq('track', 'PageView');
+      // !function (f, b, e, v, n, t, s) {
+      //   if (f.fbq) return; n = f.fbq = function () {
+      //     n.callMethod ?
+      //       n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      //   };
+      //   if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      //   n.queue = []; t = b.createElement(e); t.async = !0;
+      //   t.src = v; s = b.getElementsByTagName(e)[0];
+      //   s.parentNode.insertBefore(t, s)
+      // }(window, document, 'script',
+      //   'https://connect.facebook.net/en_US/fbevents.js');
+      // fbq('init', '292861753259331');
+      // fbq('track', 'PageView');
+
+      // !(function (c, b, d, a) {
+      //   c[a] || (c[a] = {}); c[a].config =
+      //   {
+      //     pid: "gr6w69wpuh@db34193c9e236f8",
+      //     appType: "web",
+      //     imgUrl: "https://arms-retcode.aliyuncs.com/r.png?",
+      //     sendResource: true,
+      //     enableLinkTrace: true,
+      //     behavior: true,
+      //     enableSPA: true,
+      //     useFmp: true,
+      //     enableConsole: true
+      //   };
+      //   let newScript = document.createElement("script")
+      //   newScript.src = d
+      //   newScript.setAttribute("crossorigin", "")
+      //   document.body.insertBefore(newScript, document.body.firstChild);
+      // })(window, document, "https://sdk.rum.aliyuncs.com/v1/bl.js", "__bl");
     }, []);
   }
   return (
